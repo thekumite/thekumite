@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.utility{
+    color: #d9d7d2;
+    background-color: #000000;
+    padding: 2%;
+}
+.size{
+    font-size: 2em;
+}
+.burger{
+    list-style: none;
+    line-height: 3em;
+    font-family: 'cinzel', serif;
+    font-size: 1.2em;
+}
+.burger :not(:last-child){
+    border-bottom: solid 0.1em;
+    border-color: #d9d7d2;
+}
+
+.burger__link{
+    text-decoration: none;
+    color: #d9d7d2;
+}
