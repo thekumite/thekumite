@@ -9,11 +9,16 @@
     color: #d9d7d2;
     display: flex;
     justify-content: flex-end;
+    margin: 3%;
 }
+
 .size{
+    align-self: center;
     font-size: 2em;
     padding: 2%;
+    display: none;
 }
+
 .closebtn{
     position: absolute;
     top: 0;
@@ -57,4 +62,8 @@
     color: #d9d7d2;
     transition: 500ms;
 }
-
+@media screen and (max-width: 900px){
+    .size{
+        display: inherit;
+    }
+}
