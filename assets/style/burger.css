@@ -16,7 +16,7 @@
 }
 .closebtn{
     position: absolute;
-    top: 1.5em;
+    top: 0;
     right: 0.2em;
     z-index: 10;
     font-size: 2rem;
@@ -24,7 +24,23 @@
 .burger{
     position: absolute;
     width: 100%;
-    top: 2.6em;
+    top: 0;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: 500ms;
+}
+.closed{
+    left: -100%;
+}
+.open{
+    left
+    : 0;
+}
+
+/*...........elements...........*/
+.burger__ul{
+    position: relative;
+    width: 100%;
     padding: 2%;
     background-color: #000000;
     list-style: none;
@@ -32,17 +48,13 @@
     font-family: 'cinzel', serif;
     font-size: 1.2rem;
 }
-.burger :not(:last-child){
+.burger__ul :not(:last-child){
     border-bottom: solid 0.1em;
     border-color: #d9d7d2;
 }
-
-/*...........elements...........*/
 .burger__link{
     text-decoration: none;
     color: #d9d7d2;
+    transition: 500ms;
 }
-.burger__flex{
-    display: flex;
-    justify-content: space-between;
-}
+
