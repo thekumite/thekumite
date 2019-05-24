@@ -1,25 +1,21 @@
 
-    var menu        = document.querySelector('.size');
-    var open        = document.querySelector('.burger')
-    var close       = document.querySelector('.closebtn');
-
-    
-
-    menu.addEventListener('click', function(){
+let menu        = document.querySelector('.size');
+let open        = document.querySelector('.burger')
 
 
-        if (open.classList.contains('closed')){
 
-            open.classList.replace('closed', 'open');
+menu.addEventListener('click', function(){
 
-        close.addEventListener('click', function(){
 
-            if(open.classList.contains('open')){
-                open.classList.replace('open', 'closed');
-            }
-        });
-        }; 
+    if (open.classList.contains('closed')){
 
-    }); 
+        open.classList.replace('closed', 'open');
+
+    }else if(open.classList.contains('open')){
+
+            open.classList.replace('open', 'closed');    
+    }; 
+
+}); 
 
     
