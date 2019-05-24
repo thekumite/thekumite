@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/innerburger.css">
+    <link rel="stylesheet" href="./assets/style/grundside.css">
+    <link rel="stylesheet" href="./assets/style/opretevent.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./grundside.html" class="header__logo">KUMITE</a>
+        <ul class="header__linkliste">
+            <li><a href="" class="linkliste__a">Opret event</a></li>
+            <li><a href="" class="linkliste__a">Søg Fightere</a></li>
+            <li><a href="" class="linkliste__a">Søg klubber</a></li>
+            <li><a href="" class="linkliste__a">Søg dommere</a></li>
+        </ul>
+        <div class="burger closed">
+            <a href="#" class="closebtn burger__link">&times;</a>  
+            <ul class="burger__ul">
+                <li><a href="#" class="burger__link">Opret event</a></li>
+                <li><a href="#fighters" class="burger__link">søg fightere</a></li>
+                <li><a href="#klub" class="burger__link">søg klubber</a></li>
+                <li><a href="#dommere" class="burger__link">søg dommere</a></li>
+            </ul>
+        </div>
+        <div class="utility">
+            <span class="fas fa-bars size"></span> 
+        </div>  
+    </header>
+    <main class="main">
+        <div class="main__box">
+            <h1 class="main__heading">Opret et fight event</h1>
+            <p class="main__text">Udfyld alle felter herunder. Du kan vælge selv at sende invitationer igennem systemet eller vælge all, så får alle oprettede klubber en invitation</p>
+        </div>   
+            <form class="opretevent" method="post" id="opretevent" name="opretevent" onsubmit="return valider(this);">
+
+                <label for="titel" class="opretevent__text">Titel:</label>
+                <input type="text" name="titel" id="titel" class="opretevent__felt">
+
+                <label class="opretevent__text" for="beskrivelse">Beskrivelse:</label>
+                <textarea name="beskrivelse" id="beskrivelse" cols="50" rows="6" class="opretevent__felt"></textarea>
+
+                <label class="opretevent__text" for="sted">Sted:</label>
+                <input type="text" name="sted" id="sted" class="opretevent__felt">
+
+                <label class="opretevent__text" for="startdato">Startdato:</label>
+                <input type="date" name="startdato" id="startdato" class="opretevent__felt">
+
+                <label class="opretevent__text" for="slutdato">Slutdato:</label>
+                <input type="date" name="slutdato" id="slutdato" class="opretevent__felt">
+
+                <label class="opretevent__text" for="regdato">Sidste registreringsdato:</label>
+                <input type="date" name="regdato" id="regdato" class="opretevent__felt">
+
+                <label class="opretevent__text" for="promo">Promovideolink:</label>
+                <input type="url" name="promo" id="promo" class="opretevent__felt">
+
+                <label class="opretevent__text" for="navn">Kontaktperson navn:</label>
+                <input type="navn" name="navn" id="navn" class="opretevent__felt">
+
+                <label class="opretevent__text" for="email">Kontaktperson email:</label>
+                <input type="text" name="email" id="email" class="opretevent__felt">
+
+                <label class="opretevent__text" for="telefon">Kontaktperson telefon:</label>
+                <input type="text" name="telefon" id="telefon" class="opretevent__felt">
+
+                <button id="send" class="opretevent__send">Send</button>
+
+            </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__some">
+                <i class="fab fa-facebook-square some"></i>
+                <i class="fab fa-twitter-square some"></i>
+                <i class="fab fa-google-plus-square some"></i>
+                <i class="fab fa-instagram some"></i>
+        </div>
+        <p class="footer__text">Copyright &copy 2019 Arne Buchter og Daniel Torres</p>
+    </footer>   
+    <script src="./assets/js/burger.js"></script>
+</body>
+</html>
