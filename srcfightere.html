@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/innerburger.css">
     <link rel="stylesheet" href="./assets/style/grundside.css">
+    <link rel="stylesheet" href="./assets/style/srcfightere.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,21 +33,37 @@
             <li><a href="#dommere" class="burger__link">søg dommere</a></li>
         </ul>
     </div>
-    <main class="main">
-        <select name="Klasse" id="klasse" class="select">
-            <option value="a">A</option>
-            <option value="b">B</option>
-            <option value="">C</option>   
+    <main class="main height">
+        <h1 class="main__heading">Find fightere</h1>
+        <p class="main__text main__width">På denne side kan du søge efter figtere ud fra de søgemuligheder du ser vist herunder. hvis du ikke vælger at indtaste noget får du bare vist alle profiler i uvilkårlig rækkefølge</p>
+        <div class="main__box">
+            <select name="Klasse" id="klasse" class="select">
+                <option value="klasse">Klasse</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="">C</option>   
+            </select>
+            <select name="weight" id="weight" class="select">
+                <option value="weight">Vægtklasse</option>
+                <option value="fjer">Fjervægt –57 kg</option>
+                <option value="let">Letvægt – 60 kg</option>
+                <option value="junior">Junior Weltervægt – 63, 5 kg</option>
+                <option value="welter">Weltervægt – 67 kg</option>
+                <option value="mellem">Mellemvægt – 71 kg</option>
+                <option value="supermellem">Super Mellemvægt – 75 kg</option>
+                <option value="lethard">Let Sværvægt – 81 kg</option>
+                <option value="cruiser">Cruiservægt – 85 kg</option>
+                <option value="supercruiser">Super Cruiservægt –91 kg</option>
+                <option value="hard">Sværvægt + 91 kg</option>
         </select>
-        <select name="weight" id="weight" class="select">
-
-        </select>
-        <select name="age" id="age" class="select">
-            <option value="u14">U14</option>
-            <option value="u16">U16</option>
-            <option value="u18">U18</option>
-            <option value="voksen">Voksen</option>
-        </select>
+            <select name="age" id="age" class="select">
+                <option value="age">Alder</option>
+                <option value="u14">U14</option>
+                <option value="u16">U16</option>
+                <option value="u18">U18</option>
+                <option value="voksen">Voksen</option>
+            </select>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__some">
