@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/innerburger.css">
+    <link rel="stylesheet" href="./assets/style/grundside.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./grundside.html" class="header__logo">KUMITE</a>
+        <ul class="header__linkliste">
+            <li><a href="./opretevent.html" class="linkliste__a">Opret event</a></li>
+            <li><a href="./srcfightere.html" class="linkliste__a">Søg Fightere</a></li>
+            <li><a href="" class="linkliste__a">Søg klubber</a></li>
+            <li><a href="" class="linkliste__a">Søg dommere</a></li>
+        </ul>
+        
+        <div class="utility">
+            <span class="size">menu</span> 
+        </div>  
+    </header>
+    <div class="burger closed">
+        <ul class="burger__ul">
+            <li><a href="./opretevent.html" class="burger__link">Opret event</a></li>
+            <li><a href="./srcfightere.html" class="burger__link">søg fightere</a></li>
+            <li><a href="#klub" class="burger__link">søg klubber</a></li>
+            <li><a href="#dommere" class="burger__link">søg dommere</a></li>
+        </ul>
+    </div>
+    <main class="main">
+        <select name="Klasse" id="klasse" class="select">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="">C</option>   
+        </select>
+        <select name="weight" id="weight" class="select">
+
+        </select>
+        <select name="age" id="age" class="select">
+            <option value="u14">U14</option>
+            <option value="u16">U16</option>
+            <option value="u18">U18</option>
+            <option value="voksen">Voksen</option>
+        </select>
+    </main>
+    <footer class="footer">
+        <div class="footer__some">
+            <i class="fab fa-facebook-square some"></i>
+            <i class="fab fa-twitter-square some"></i>
+            <i class="fab fa-google-plus-square some"></i>
+            <i class="fab fa-instagram some"></i>
+        </div>
+        <p class="footer__text">Copyright &copy 2019 Arne Buchter og Daniel Torres</p>
+    </footer>   
+    <script src="./assets/js/burger.js"></script>
+</body>
+</html>
