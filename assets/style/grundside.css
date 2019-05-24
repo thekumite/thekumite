@@ -3,6 +3,16 @@
     position: fixed;
     width: 100%;
     background-color: #000000;
+    height: 100px;
+    z-index: 5;
+}
+.main{
+    padding-top: 7em;
+    width: 100%;
+    background-color: #d9d7d2;
+    color: #000000;
+    margin: 0 auto;
+    min-height: 100rem;
 }
 .footer{
     position: fixed;
@@ -12,13 +22,19 @@
     z-index: 100;
     color: #d9d7d2;
     font-family: 'Cinzel', serif;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     text-align: center;
+}
+
+/*............elements.............*/
+.main__wrapper{
+    width: 700px;
+    margin: 0 auto;
 }
 .header__logo {
     font-family: 'Permanent Marker', cursive;
-    color: #990000;
-    font-size: 3em;
+    color: crimson;
+    font-size: 3rem;
     padding: 0 3%;
 }
 .header__linkliste{
@@ -27,7 +43,7 @@
     justify-content: space-between;
     padding: 0 3%;
     font-family: 'Cinzel', serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 .linkliste__a{
     text-decoration: none;
@@ -35,6 +51,32 @@
 }
 .linkliste__a:hover{
     color: #f8f7f7;
+}
+.main__heading{
+    font-size: 2rem;
+    margin: 2%;
+    text-align: center;
+}
+.main__text{
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 3% 0;
+}
+.wrapper__flex{
+    margin: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__text{
+    padding: 1%;
+}
+.footer__some{
+    padding: 0.5% 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color:crimson;
 }
 
 @media screen and (max-width: 900px){
@@ -45,5 +87,9 @@
 
     .header__linkliste{
         display: none;
+    }
+    .main__wrapper{
+        width: 300px;
+        margin: 0 auto;
     }
 }
