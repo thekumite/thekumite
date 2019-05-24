@@ -18,33 +18,25 @@
     padding: 2%;
     display: none;
 }
-
-.closebtn{
-    position: absolute;
-    top: 0;
-    right: 0.2em;
-    z-index: 10;
-    font-size: 2rem;
-}
 .burger{
     position: absolute;
     width: 100%;
-    top: 0;
     overflow-x: hidden;
-    z-index: 5;
+    z-index: 10;
     transition: 500ms;
 }
 .closed{
-    left: -100%;
+    top: -100%;
 }
 .open{
-    left
-    : 0;
+    top
+    : 100px;
 }
 
 /*...........elements...........*/
 .burger__ul{
     position: relative;
+    text-align: center;
     width: 100%;
     padding: 2%;
     background-color: #000000;
@@ -53,10 +45,10 @@
     font-family: 'cinzel', serif;
     font-size: 1.2rem;
 }
-.burger__ul :not(:last-child){
+/* .burger__ul :not(:last-child){
     border-bottom: solid 0.1em;
-    border-color: #d9d7d2;
-}
+    border-color: #d9d7d2; 
+}*/
 .burger__link{
     text-decoration: none;
     color: #d9d7d2;
