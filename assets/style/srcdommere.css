@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+/*..........block..........*/
+.select{
+    width: 15em;
+    height: 2em;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    margin: 1.5em 2%;
+    background-color: #f8f7f7;
+}
+.height{
+    height: 41rem;
+    background-image: url(../img/referee-bodell.png);
+    background-size: cover;
+    width: 100%;
+}
+
+/*........elements............*/
+.main__box{
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+.main__width{
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto 1.5em auto;
+}
+.klub__heading{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    margin: 2%;
+    text-align: center;
+    color: crimson;
+}
+.klub__text{
+    font-family: 'Cinzel', serif;
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 3% auto;
+    color: crimson;
+    text-align: center;
+}
+.select__search{
+    position: absolute;
+    right: 0.4rem;
+    background-color: #001326;
+    color: #d9d7d2;
+    font-size: 1.2rem;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 10px;
+}

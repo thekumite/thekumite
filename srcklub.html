@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/innerburger.css">
+    <link rel="stylesheet" href="./assets/style/grundside.css">
+    <link rel="stylesheet" href="./assets/style/srcklub.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./grundside.html" class="header__logo">KUMITE</a>
+        <ul class="header__linkliste">
+            <li><a href="./opretevent.html" class="linkliste__a">Opret event</a></li>
+            <li><a href="./srcfightere.html" class="linkliste__a">Søg Fightere</a></li>
+            <li><a href="./srcklub.html" class="linkliste__a">Søg klubber</a></li>
+            <li><a href="./srcdommere.html" class="linkliste__a">Søg dommere</a></li>
+        </ul>
+        
+        <div class="utility">
+            <span class="size">menu</span> 
+        </div>  
+    </header>
+    <div class="burger closed">
+        <ul class="burger__ul">
+            <li><a href="./opretevent.html" class="burger__link">Opret event</a></li>
+            <li><a href="./srcfightere.html" class="burger__link">søg fightere</a></li>
+            <li><a href="./srcklub.html" class="burger__link">søg klubber</a></li>
+            <li><a href="./srcdommere.html" class="burger__link">søg dommere</a></li>
+        </ul>
+    </div>
+    <main class="main height">
+        <h1 class="main__heading">Find klubber</h1>
+        <p class="main__text main__width">På denne side kan du søge efter klubber ud fra de søgemuligheder du ser vist herunder. hvis du ikke vælger at indtaste noget får du bare vist alle profiler i uvilkårlig rækkefølge</p>
+        <div class="main__box">
+            <select name="stilart" id="stilart" class="select">
+                <option value="Stilart">Stilart</option>
+                <option value="karate">Karate</option>
+                <option value="teakwondo">Taekwondo</option>
+                <option value="kickboxing">Kickboxing</option>   
+                <option value="boxing">Boxing</option>  
+                <option value="thaiboxing">Thaiboxing</option>  
+            </select>
+            <select name="area" id="area" class="select">
+                <option value="area">Område</option>
+                <option value="koebenhavn">København</option>
+                <option value="sjaelland">Sjælland</option>
+                <option value="lollandfalster">Lolland/Falster</option>
+                <option value="fyn">Fyn</option>
+                <option value="sdrjylland">Sønderjylland</option>
+                <option value="eastjylland">Østjylland</option>
+                <option value="vestjylland">vestjylland</option>
+                <option value="midtjylland">midtjylland</option>
+                <option value="nordjylland">Nordjylland</option>
+                <option value="bornholm">Bornholm</option>
+                <option value="islands">Øerne</option>
+        </select>
+        <button id="search" class="select__search">Søg</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__some">
+            <i class="fab fa-facebook-square some"></i>
+            <i class="fab fa-twitter-square some"></i>
+            <i class="fab fa-google-plus-square some"></i>
+            <i class="fab fa-instagram some"></i>
+        </div>
+        <p class="footer__text">Copyright &copy 2019 Arne Buchter og Daniel Torres</p>
+    </footer>   
+    <script src="./assets/js/burger.js"></script>
+</body>
+</html>
