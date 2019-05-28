@@ -8,14 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/burger.css">
     <title>The Kumite | Forside</title>
 </head>
 <body>
     <header class="header-container">
         <div class="logo-wrapper">
             <h1 class="header-container__logo">THE KUMITE</h1>
-            <!-- <h3 class="header-container__logo-slogan">Become a Legend</h3> -->
         </div>
             <ul class="header-container__nav">
                 <li> <a class="nav__about" href="#about">OM KUMITE</a></li>
@@ -24,18 +22,18 @@
                 <li> <a class="nav__audience" href="#dommere">FOR TILSKUER OG FANS</a> </li>
             </ul>
             <div class="utility">
-                <span class="fas fa-bars size"></span>  
-                <ul class="burger">
-                    <li><a href="#about" class="burger__link">Om kumite</a></li>
-                    <li><a href="#fighters" class="burger__link">For fightere</a></li>
-                    <li><a href="#klub" class="burger__link">For klubber</a></li>
-                    <li><a href="#dommere" class="burger__link">For dommere</a></li>
-                    <li>Registrer</li>
-                    <li>Log in</li>
-                </ul>
-            </div>  
-            <script src="./assets/js/burger.js"></script>
+                <span class="size">menu</span>
+            </div>
+            <div class="burger closed">
+                    <ul class="burger__ul">
+                        <li><a href="#about" class="burger__link">OM KUMITE</a></li>
+                        <li><a href="#fighters" class="burger__link">FOR FIGHTERS</a></li>
+                        <li><a href="#klub" class="burger__link">FOR KLUBBER</a></li>
+                        <li><a href="#dommere" class="burger__link">FOR TILSKUER OG FANS</a></li>
+                    </ul>
+                </div>
     </header>
+    
         <figure id="about" class="figure-image-one">
             <figcaption class="section-wrapper">
                         <h2 class="om-kumite">OM THE KUMITE</h2>
@@ -84,12 +82,13 @@
         <footer class="footer-wrapper">
             <h1 class="footer-container__logo">THE KUMITE</h1>
             <div class="copy-box">
-                <p class="copyright">Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi quidem aliquam eius fugiat vero.</p>
+                <p class="copyright">Copyright &copy 2019 Arne Buchter og Daniel Torres</p>
             </div>
-                <div class="some-wrapper">
+            <div class="some-wrapper">
                     <a href="#" class="fab fa-facebook-square"></a>
                     <a href="#" class="fab fa-instagram"></a>
-                </div>
+                </div>  
         </footer>
+        <script src="./assets/js/burger.js"></script>
     </body>
 </html>
