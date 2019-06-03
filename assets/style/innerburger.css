@@ -19,7 +19,7 @@
     display: none;
 }
 .burger{
-    position: absolute;
+    position: fixed;
     width: 100%;
     overflow-x: hidden;
     z-index: 10;

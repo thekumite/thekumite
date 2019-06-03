@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+/*............nameconvention BEM.........*/
+
+/*..........Blocks..............*/
+.maingrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    color: #d9d7d2;
+    font-family: 'cinzel', serif;
+    font-size: 2.5rem;
+}
+
+
+.maingrid__ur{
+    padding: 2%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #011326;
+}
+.ur__klasse{
+    font-family: 'cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #011326;
+    background-color: #d9d7d2;
+}
+.ur__timer{
+    padding: 0;
+    margin: 2%;
+}
+.ur__button{
+    font-family: 'cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #011326;
+    background-color: #d9d7d2;
+    border-radius: 10px;
+    width: 5.5rem;
+    height: 4rem;
+}
+.ur__button:hover{
+    cursor: pointer;
+}
+.select__tid{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.select__time{
+    font-family: 'cinzel', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #011326;
+    background-color: #d9d7d2;
+    border-radius: 10px;
+    width: 3.8rem;
+    height: 2.1rem;
+}
