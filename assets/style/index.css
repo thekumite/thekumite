@@ -84,21 +84,66 @@ section {
 }
 
 .figure-image-four {
-    background-image: url(../img/glory.jpg);
+    background-image: url(../img/img\,matei.png);
     min-height: 100%;
     padding-top: 300px;
 }
 
-/* .figure-image-two {
-    background-image: url(../img/1valg.PNG);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    background-color: crimson;
+.registre-box {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -150px;
+    height: 500px;
+    width: 300px;
+    background-color: #001326;
+    z-index: 50;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+   
 }
- */
+
+.registre-box__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d9d7d2;
+
+}
+
+.registre-button {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 17px;
+    font-family: 'Bangers', cursive;
+    color: #001326;
+    font-size: 20px;
+}
+
+.registre-button-ny {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 17px;
+    font-family: 'Bangers', cursive;
+    color: #001326;
+    font-size: 20px;
+    background-color: crimson;
+    color: white;
+}
+
+.user-name-input {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.pass-word-input {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
 .om-kumite {
     color: crimson;
 }
@@ -132,6 +177,20 @@ section {
     background-color: white;
 } */
 /* ELEMENT */
+.ny-bruger {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+}
+
+.clear-button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    font-size: 55px;
+    border-radius: 50px;
+    color: #d9d7d2;  
+}
+
 .header-container__logo {
     font-family: 'Permanent Marker', cursive;
     color: crimson;
@@ -156,10 +215,17 @@ section {
 }
 
 .nav__about {
-    text-decoration: none;
     color: #d9d7d2;
-    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+   
 }
+
+.bruger-navn {
+    font-family: 'Bangers', cursive;
+}
+
 
 .nav__about:hover {
     color: crimson;
@@ -168,6 +234,8 @@ section {
 .nav__fighters {
     text-decoration: none;
     color: #d9d7d2;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
 }
 
 .nav__fighters:hover {
@@ -177,6 +245,8 @@ section {
 .nav__clubs {
     text-decoration: none;
     color: #d9d7d2;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
 }
 
 .nav__clubs:hover {
@@ -186,6 +256,8 @@ section {
 .nav__audience {
     text-decoration: none;
     color: #d9d7d2;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
 }
 
 .nav__audience:hover {
@@ -236,6 +308,12 @@ h2 {
     display: none;
 }
 @media screen and (max-width: 900px){
+
+.registre-box {
+    position: fixed;
+    top: 150px;
+    left: 200px;
+}
 
 .header-container__nav {
     display: none;
