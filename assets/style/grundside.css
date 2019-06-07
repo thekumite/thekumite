@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+body{
     margin: 0;
 }
 .header{
     position: fixed;
     width: 100%;
     background-color: #001326;
-    height: 100px;
+    height: 152px;
     z-index: 100;
+    opacity: 0.8;
 }
 .main{
-    padding-top: 7em;
+    padding-top: 8em;
     width: 100%;
     background-color: #d9d7d2;
     color: #000000;
@@ -39,15 +41,16 @@
     font-family: 'Permanent Marker', cursive;
     text-decoration: none;
     color: crimson;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0 3%;
 }
 .header__linkliste{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
     padding: 0 3%;
-    font-family: 'Cinzel', serif;
+    font-family: 'bangers', cursive;
     font-size: 1.2rem;
 }
 .linkliste__a{
