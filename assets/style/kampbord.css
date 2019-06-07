@@ -1,0 +1,14 @@
+.maingrid{
+    position: fixed; 
+    z-index: 50;
+    cursor: pointer;
+    width: 100%;
+    transition: 500ms;
+}
+
+.maingrid__open{
+    bottom: 0;
+}
+.maingrid__closed{
+    bottom: -190px;
+}

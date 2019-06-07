@@ -2,7 +2,6 @@
 
 *{
     padding: 0;
-    margin: 0;
 }
 
 .utility{
@@ -22,7 +21,7 @@
     position: fixed;
     width: 100%;
     overflow-x: hidden;
-    z-index: 10;
+    z-index: 30;
     transition: 500ms;
 }
 .closed{
@@ -45,10 +44,7 @@
     font-family: 'cinzel', serif;
     font-size: 1.2rem;
 }
-/* .burger__ul :not(:last-child){
-    border-bottom: solid 0.1em;
-    border-color: #d9d7d2; 
-}*/
+
 .burger__link{
     text-decoration: none;
     color: #d9d7d2;

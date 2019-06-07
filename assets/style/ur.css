@@ -10,12 +10,12 @@
     text-align: center;
     color: #d9d7d2;
     font-family: 'cinzel', serif;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 
 .maingrid__ur{
-    padding: 2%;
+    padding: 1%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -40,13 +40,13 @@
     background-color: #d9d7d2;
     border-radius: 10px;
     width: 5.5rem;
-    height: 4rem;
+    height: 3rem;
 }
 .ur__button:hover{
     cursor: pointer;
 }
 .select__tid{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0;
 }
 .select__time{
@@ -57,9 +57,9 @@
     background-color: #d9d7d2;
     border-radius: 10px;
     width: 3.8rem;
-    height: 2.1rem;
+    height: 2.0rem;
 }
 .select__size{
-    width: 15rem;
+    width: 13rem;
     margin: auto;
 }

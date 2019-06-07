@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+/*.........name convention BEM.........*/
+body{
+    margin: 0;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #001326;
+    height: 55px;
+    z-index: 100;
+}
+
+.main-wrapper{
+    padding-top: 100px;
+    background-color: #d9d7d2;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.open{
+    top: 37px;
+}
+
+
+/*............Elements............*/
+.showbox__top{
+    position: fixed;
+    background-color: #001326;
+    opacity: 0.6;
+    height: 9rem;
+    width: 100%;
+    z-index: 15;
+}
+.showbox__bottom{
+    position: fixed;
+    background-color: #001326;
+    opacity: 0.6;
+    height: 6rem;
+    width: 100%;
+    bottom: 0;
+    z-index: 15;
+}
+
+.header__logo {
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    color: crimson;
+    font-size: 3rem;
+    padding: 0 3%;
+    align-self: center;
+}
+.header__linkliste{
+    width: 65%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    padding: 0 3%;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+.linkliste__a{
+    text-decoration: none;
+    color: #d9d7d2;
+    
+}
+.linkliste__a:hover{
+    color: #f8f7f7;
+}
+.main-wrapper__Vs{
+    height: 16rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.vs__text{
+    color: crimson;
+    font-family: 'Bangers', cursive;
+    font-size: 6rem;
+    margin: 0;
+}
+.vs__info{
+    color: #001326;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/*........modyfiers...........*/
+
+.flip-box--one{
+    box-shadow: 6px 6px 6px 6px #eb1f40;
+}
+.flip-box--two{
+    box-shadow: 6px 6px 6px 6px blue;
+}
+@media screen and (max-width: 900px){
+    .main-wrapper{
+        width: 100%;
+    }
+    .header__linkliste{
+        display: none;
+    }
+}
