@@ -33,7 +33,7 @@ body {
     align-items: center;
 }
 
-.choose-button {
+.choose-button-one, .choose-button-two, .choose-button-three {
     border-radius: 10px;
     padding: 20px;
     font-size: 17px;

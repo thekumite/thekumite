@@ -94,6 +94,10 @@ body{
     font-size: 1.2rem;
 }
 
+.front-image {
+    height: 230px;
+}
+
 /*........modyfiers...........*/
 
 .flip-box--one{
@@ -109,4 +113,5 @@ body{
     .header__linkliste{
         display: none;
     }
+
 }

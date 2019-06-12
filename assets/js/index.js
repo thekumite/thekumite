@@ -14,5 +14,18 @@ document.addEventListener('DOMContentLoaded', function(){
         
     }); 
 
+    document.querySelector('.registre-button-ny').addEventListener('click', function(event){
+        event.preventDefault();
+        location.href = './formside1.html';
+    
+     });
+
+     document.querySelector('.registre-button').addEventListener('click', function(event){
+        event.preventDefault();
+        location.href = './grundside.html';
+        
+
+         });
+
 
 });
