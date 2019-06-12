@@ -1,18 +1,21 @@
 let countdown;
-const timerDisplay = document.querySelector('.ur__timer');
-const buttons = document.querySelectorAll('.select__time');
+let timerDisplay = document.querySelector('.ur__timer');
+let buttons = document.querySelectorAll('.select__time');
+let currentTime = 0;
 
 function timer(seconds){
     clearInterval(countdown);
     const now = Date.now();
     const then = now + seconds * 1000;
     displayTimeLeft(seconds);
-
+    
     countdown = setInterval(() => {
         const secondsleft = Math.round((then - Date.now()) / 1000);
+        currentTime = secondsleft;
 
         if(secondsleft < 0){
             clearInterval(countdown);
+            document.title = 'TheKumite';
             return
         }
         displayTimeLeft(secondsleft);
@@ -27,7 +30,7 @@ function displayTimeLeft(seconds){
     timerDisplay.textContent = display;
 }
 
-function startTimer() {
+    function startTimer() {
     let seconds = parseInt(this.dataset.time);
     timer(seconds);
 }
@@ -35,7 +38,7 @@ function startTimer() {
 
 buttons.forEach(button => button.addEventListener('click' , function(){
     let seconds = parseInt(this.dataset.time);
-    timerDisplay.setAttribute('data-time', seconds);
+    currentTime = seconds;
     displayTimeLeft(seconds);
 }));
 
@@ -43,6 +46,19 @@ let startStop = document.querySelector('.start');
 let resetknap = document.querySelector('.reset');
 
 startStop.addEventListener('click', function(){
-        timer(parseInt(timerDisplay.getAttribute('data-time')));
-        startStop.innerHTML = 'Stop';
+    if(startStop.textContent === 'Stop'){
+        startStop.textContent = 'Start';
+        clearInterval(countdown);
+
+    }else{ 
+        timer(currentTime);
+        startStop.textContent = 'Stop';
+    }
+});
+
+resetknap.addEventListener('click', function(){
+    clearInterval(countdown);
+    timerDisplay.textContent = '0:00';
+    currentTime = 0;
+    document.title = 'TheKumite';
 });
