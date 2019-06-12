@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
+.main{
+    margin-bottom: 10rem;
+}
+
 .opretevent{
     font-family: 'Cinzel', serif;
     font-size: 1.2rem;
@@ -12,6 +16,7 @@
     padding: 1rem;
     border-radius: 10px;
 }
+
 
 /*...........elements............*/
 .main__box{
