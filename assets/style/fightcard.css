@@ -45,7 +45,7 @@ body{
     position: fixed;
     background-color: #001326;
     opacity: 0.8;
-    height: 6rem;
+    height: 55px;
     width: 100%;
     bottom: 0;
     z-index: 15;
@@ -102,10 +102,10 @@ body{
 /*........modyfiers...........*/
 
 .flip-box--one{
-    box-shadow: 6px 6px 6px 6px #eb1f40;
+    box-shadow: 0px 0px 6px 12px #eb1f40;
 }
 .flip-box--two{
-    box-shadow: 6px 6px 6px 6px blue;
+    box-shadow: 0px 0px 6px 12px blue;
 }
 @media screen and (max-width: 900px){
     .main-wrapper{
