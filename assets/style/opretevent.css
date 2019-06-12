@@ -4,10 +4,13 @@
     font-family: 'Cinzel', serif;
     font-size: 1.2rem;
     width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 6.8rem auto;
     display: flex;
     flex-direction: column;
     padding-bottom: 5em;
+    border: rgba(0,19,38,0.5) solid 5px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 /*...........elements............*/

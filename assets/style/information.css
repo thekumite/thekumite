@@ -1,73 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-}
-.header{
-    position: fixed;
-    width: 100%;
-    background-color: #001326;
-    height: 152px;
-    z-index: 100;
-    opacity: 0.8;
-}
+
 .main{
-    padding-top: 8em;
-    width: 100%;
-    background-color: #d9d7d2;
-    color: #000000;
-    margin: 0 auto;
-
-
-}
-
-/*............elements.............*/
-.main__wrapper{
-    width: 700px;
-    margin: 0 auto;
-}
-.header__logo {
-    font-family: 'Permanent Marker', cursive;
-    text-decoration: none;
-    color: crimson;
-    font-size: 2rem;
-    padding: 0 3%;
-}
-.header__linkliste{
-    list-style: none;
+    width: 95%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
-    padding: 0 3%;
-    font-family: 'bangers', cursive;
-    font-size: 1.2rem;
 }
-.linkliste__a{
-    text-decoration: none;
-    color: #d9d7d2;
+.info{
+    margin-top: 5rem;
+    width: 50%;
 }
-.linkliste__a:hover{
-    color: #f8f7f7;
+
+.drikkelse{
+    margin: 5rem 0 3.5rem 2rem;
+    width: 300px;
+    border: solid 3px #001326;
 }
-.main__heading{
-    font-family: 'Cinzel', serif;
-    font-size: 2rem;
-    margin: 2%;
+
+.drikkelse__img {
+    width: 100%;
+}
+.drikkelse__h1{
+    margin: 1rem 0;
     text-align: center;
+    font-family: 'cinzel' , serif;
+    font-size: 2rem;
+    font-weight: bold;
 }
-.main__text{
-    font-family: 'Cinzel', serif;
-    color: #000000;
+.drikkelse__text{
+    text-align: center;
+    font-family: 'cinzel' , serif;
     font-size: 1.2rem;
-    margin: 3% 0;
 }
-.wrapper__flex{
-    margin: 2.5em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+/*............footer.........*/
 .footer-wrapper {
     position: fixed;
     bottom: 0;
@@ -110,18 +76,16 @@ body{
 }
 
 @media screen and (max-width: 900px){
-    .header{
-        display: flex;
-        justify-content: space-between;
+    .main{
+        flex-direction: column;
+    }
+    .info{
+        margin: auto;
+    }
+    .drikkelse__h1{
+        font-size: 1.2rem;
     }
 
-    .header__linkliste{
-        display: none;
-    }
-    .main__wrapper{
-        width: 300px;
-        margin: 0 auto;
-    }
     .footer-wrapper{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30% 1fr;
