@@ -28,8 +28,7 @@
     top: -100%;
 }
 .open{
-    top
-    : 100px;
+    top: 100px;
 }
 
 /*...........elements...........*/
@@ -38,7 +37,8 @@
     text-align: center;
     width: 100%;
     padding: 2%;
-    background-color: #000000;
+    background-color: #001326;
+    opacity: 0.8;
     list-style: none;
     line-height: 3rem;
     font-family: 'cinzel', serif;
