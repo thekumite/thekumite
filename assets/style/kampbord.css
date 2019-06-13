@@ -1,3 +1,7 @@
+/*       Name convention BEM     */
+
+/*        Blocks        */
+
 .maingrid{
     position: fixed; 
     z-index: 50;
@@ -5,6 +9,8 @@
     width: 100%;
     transition: 500ms;
 }
+
+/*        Elements      */
 
 .maingrid__open{
     bottom: 0;

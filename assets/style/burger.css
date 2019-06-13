@@ -1,9 +1,10 @@
+/*...........namecovetion BEM..........*/
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 *{
     padding: 0;
 }
-
+/*.....Blocks......*/
 .utility{
     color: #d9d7d2;
     display: flex;

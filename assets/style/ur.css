@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 /*............nameconvention BEM.........*/
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 /*..........Blocks..............*/
 .maingrid{
@@ -13,6 +14,7 @@
     font-size: 2.3rem;
 }
 
+/*          Elements         */
 
 .maingrid__ur{
     padding: 1%;
