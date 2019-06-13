@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let RegButton = document.querySelector('.registre-button');
 
+
     ClearButton.addEventListener('click', function(){
         RegBox.style.display="none";
     });
@@ -27,5 +28,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
          });
 
+    
 
 });
