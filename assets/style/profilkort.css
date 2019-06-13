@@ -81,13 +81,13 @@
     height: 200px;
   }
 
-  .back-image__text {
-    margin: 0.8rem 0 0.3em 0;
-  }
-
   .background-image {
     background-color: #000000;
     opacity: 0.7;
+  }
+
+  .back-image__text {
+    margin: 0.8rem 0 0.3em 0;
   }
   @media screen and (max-width: 900px){
     .flip-box-front p{
