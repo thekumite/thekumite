@@ -1,4 +1,7 @@
+/*         Name convention BEM     */
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+/*        Blocks        */
 
 .main{
     width: 95%;
@@ -16,6 +19,18 @@
     width: 300px;
     border: solid 3px #001326;
 }
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    height: 10em;
+    width: 100%;
+    background-color: crimson;
+}
+/*       Elements         */
 
 .drikkelse__img {
     width: 100%;
@@ -31,19 +46,6 @@
     text-align: center;
     font-family: 'cinzel' , serif;
     font-size: 1.2rem;
-}
-
-/*............footer.........*/
-.footer-wrapper {
-    position: fixed;
-    bottom: 0;
-    z-index: 20;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-    height: 10em;
-    width: 100%;
-    background-color: crimson;
 }
 .footer-container__logo {
     font-family: 'Permanent Marker', cursive;
@@ -75,13 +77,21 @@
     text-decoration: none;
 }
 
+/*           Responsive         */
+
 @media screen and (max-width: 900px){
+ 
+    /*     Blocks       */
+
     .main{
         flex-direction: column;
     }
     .info{
         margin: auto;
     }
+
+    /*        Elements       */
+     
     .drikkelse__h1{
         font-size: 1.2rem;
     }
