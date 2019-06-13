@@ -1,7 +1,11 @@
+/*    Name convention BEM    */
+
 * {
     margin: 0;
     padding: 0;
 } 
+
+/*  Blocks   */
 
 body {
     font-family: 'Bangers', cursive;
@@ -49,6 +53,8 @@ body {
     color: white;
 }
 
+/*     Elements    */
+ 
 .header-container__logo {
     color: crimson;
     font-size: 100px;
