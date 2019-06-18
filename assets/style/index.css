@@ -131,8 +131,8 @@ section {
     font-family: 'Bangers', cursive;
     color: #001326;
     font-size: 20px;
-    background-color: crimson;
-    color: white;
+    background-color:black;
+    color: gold;
 }
 
 .user-name-input {
@@ -175,12 +175,11 @@ section {
     justify-content: center;
     align-items: center;
 }
-
-/* .info-box {
+ .info-box {
     width: 100%;
     height: 300px;
     background-color: white;
-} */
+} 
 /* ELEMENT */
 .ny-bruger {
     font-family: 'Bangers', cursive;
